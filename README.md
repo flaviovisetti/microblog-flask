@@ -4,7 +4,7 @@ That project follow the Mega Tutorial made by **Miguel Grinberg** about flask an
 
 For more information check the link below:
 
-- [Site](https://blog.miguelgrinberg.com/index)
+- [Miguel Grinberg Site](https://blog.miguelgrinberg.com/index)
 - [Kickstarter](https://learn.miguelgrinberg.com/)
 
 ### Requirements
@@ -49,3 +49,5 @@ Run the project
 export FLASK_APP=microblog.py
 flask run
 ```
+
+The application will be available in `http://localhost:5000`
