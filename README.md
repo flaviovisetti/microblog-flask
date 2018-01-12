@@ -28,26 +28,23 @@ Inside the folder, install all dependencies
 pipenv install --dev --three
 ```
 
-Activate the virtualenv to isolate the environment
+Access shell with the application dependencies
 
 ```shell
-pipenv shell
+pipenv run python manage.py shell
 ```
 
 Create the tables in SQLite (Migrations)
-*Remember to activate the virtualenv*
 
 ```shell
-export FLASK_APP=microblog.py
-flask db migrate
+pipenv run python manage.py db migrate
+pipenv run python manage.py db update
 ```
 
 Run the project
-*Remember to activate the virtualenv*
 
 ```shell
-export FLASK_APP=microblog.py
-flask run
+pipenv run python run.py
 ```
 
 The application will be available in `http://localhost:5000`

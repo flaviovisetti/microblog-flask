@@ -1,4 +1,25 @@
-2018-01-11 22:34:54,967 ERROR: Exception on /favicon.ico [GET] [in /Users/flaviovisetti/.local/share/virtualenvs/microblog--M0ad26m/lib/python3.6/site-packages/flask/app.py:1560]
+2018-01-10 22:41:55,099 ERROR: Exception on /login [POST] [in /Users/flaviovisetti/.local/share/virtualenvs/microblog--M0ad26m/lib/python3.6/site-packages/flask/app.py:1560]
+Traceback (most recent call last):
+  File "/Users/flaviovisetti/.local/share/virtualenvs/microblog--M0ad26m/lib/python3.6/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/flaviovisetti/.local/share/virtualenvs/microblog--M0ad26m/lib/python3.6/site-packages/flask/app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/flaviovisetti/.local/share/virtualenvs/microblog--M0ad26m/lib/python3.6/site-packages/flask/app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/flaviovisetti/.local/share/virtualenvs/microblog--M0ad26m/lib/python3.6/site-packages/flask/_compat.py", line 33, in reraise
+    raise value
+  File "/Users/flaviovisetti/.local/share/virtualenvs/microblog--M0ad26m/lib/python3.6/site-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/flaviovisetti/.local/share/virtualenvs/microblog--M0ad26m/lib/python3.6/site-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/flaviovisetti/workspace/personal/python-projects/microblog/app/routes.py", line 41, in login
+    if user is None or not user.check_password(form.password.data):
+  File "/Users/flaviovisetti/workspace/personal/python-projects/microblog/app/models.py", line 25, in check_password
+    return check_password_hash(self.password_hash, password)
+  File "/Users/flaviovisetti/.local/share/virtualenvs/microblog--M0ad26m/lib/python3.6/site-packages/werkzeug/security.py", line 245, in check_password_hash
+    if pwhash.count('$') < 2:
+AttributeError: 'NoneType' object has no attribute 'count'
+2018-01-11 01:34:00,492 ERROR: Exception on /susan [GET] [in /Users/flaviovisetti/.local/share/virtualenvs/microblog--M0ad26m/lib/python3.6/site-packages/flask/app.py:1560]
 Traceback (most recent call last):
   File "/Users/flaviovisetti/.local/share/virtualenvs/microblog--M0ad26m/lib/python3.6/site-packages/flask/app.py", line 1612, in full_dispatch_request
     rv = self.dispatch_request()
@@ -40,7 +61,7 @@ Traceback (most recent call last):
   File "/Users/flaviovisetti/.local/share/virtualenvs/microblog--M0ad26m/lib/python3.6/site-packages/flask/templating.py", line 85, in _get_source_fast
     raise TemplateNotFound(template)
 jinja2.exceptions.TemplateNotFound: 400.html
-2018-01-11 22:34:57,531 ERROR: Exception on /favicon.ico [GET] [in /Users/flaviovisetti/.local/share/virtualenvs/microblog--M0ad26m/lib/python3.6/site-packages/flask/app.py:1560]
+2018-01-11 22:34:52,320 ERROR: Exception on /favicon.ico [GET] [in /Users/flaviovisetti/.local/share/virtualenvs/microblog--M0ad26m/lib/python3.6/site-packages/flask/app.py:1560]
 Traceback (most recent call last):
   File "/Users/flaviovisetti/.local/share/virtualenvs/microblog--M0ad26m/lib/python3.6/site-packages/flask/app.py", line 1612, in full_dispatch_request
     rv = self.dispatch_request()
