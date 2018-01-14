@@ -1,9 +1,13 @@
 # Ignore SQLite
 *.db
+app.db
 
 # Ignore Log folder
-/log/*
+logs/
 
 # TMP: ignore __pycache__ 
 __pycache__/
+app/__pycache__/
+migrations/__pycache__/
+migrations/versions/__pycache__/
 *.pyc
