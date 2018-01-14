@@ -12,7 +12,7 @@ For more information check the link below:
  - [Python 3+](https://www.python.org/)
  - [Pip](https://pypi.python.org/pypi/pip)
  - [Pipenv](https://github.com/pypa/pipenv)
- - [SQLite](https://www.sqlite.org/)
+ - [PostgreSQL](https://www.postgresql.org/)
 
 ### Setup
 
@@ -20,6 +20,18 @@ Clone the project to your computer
 
 ```shell
 git clone git@github.com:flaviovisetti/microblog-flask.git
+```
+
+Create an environment file.
+
+```shell
+cp .env.sample .env
+```
+
+Include a postgreSQL url into .env:
+
+```text
+DATABASE_URL=postgresql://<your database configuration>
 ```
 
 Inside the folder, install all dependencies
