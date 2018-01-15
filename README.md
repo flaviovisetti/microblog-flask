@@ -46,11 +46,10 @@ Access shell with the application dependencies
 pipenv run python manage.py shell
 ```
 
-Create the tables in SQLite (Migrations)
+Create the tables in SQLite
 
 ```shell
-pipenv run python manage.py db migrate
-pipenv run python manage.py db update
+pipenv run python manage.py db upgrade
 ```
 
 Run the project
