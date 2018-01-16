@@ -51,7 +51,7 @@
             {% endfor %}
         {% endif %}
         {% endwith %}
-        
+
         {% block app_content %}
         {% endblock %}
     </div>
@@ -60,4 +60,5 @@
 {% block scripts %}
     {{ super() }}
     {{ moment.include_moment() }}
+    {{ moment.lang(g.locale) }}
 {% endblock %}
