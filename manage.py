@@ -9,6 +9,7 @@ load_dotenv(join(dirname(__file__), '.env'))
 manager = Manager(app)
 manager.add_command('db', MigrateCommand)
 
+
 @manager.shell
 def shell():
     return {

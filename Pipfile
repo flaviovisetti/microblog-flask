@@ -19,6 +19,8 @@ flask-babel = "*"
 pyjwt = "*"
 python-dotenv = "*"
 psycopg2 = "*"
+guess-language_spirit = "*"
+requests = "*"
 
 [dev-packages]
 

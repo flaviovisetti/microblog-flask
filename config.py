@@ -8,6 +8,7 @@ class Config(object):
     SQLALCHEMY_TRACK_MODIFICATIONS = False
     POSTS_PER_PAGE = 20
     LANGUAGES = ['en', 'pt']
+    MS_TRANSLATOR_KEY = os.environ.get('MS_TRANSLATOR_KEY')
 
 
 class DevelopmentConfig(Config):
